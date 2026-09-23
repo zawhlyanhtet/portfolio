@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: #0b1013;
+  font-family: "Manrope", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@theme {
+  --font-manrope: Manrope, sans-serif;
+
+  --color-ink: #0b1013;
+  /* --color-panel: #15161c; */
+  /* --color-line: rgba(255, 255, 255, 0.09); */
+  --color-mist: #b3b6d4;
+  --color-muted: #aeb1ba;
+
+  --color-accent: #7f8bff;
+  --color-accentsoft: #99a4ff;
+
+  /* --shadow-glow: 0 24px 80px rgba(16, 18, 28, 0.28); */
+}
+
+@layer utilities {
+  .bg-haze {
+    background-image:
+      radial-gradient(
+        circle at top,
+        rgba(255, 255, 255, 0.03),
+        transparent 25.5%
+      ),
+      linear-gradient(180deg, #0b1013 0%, #0a0f12 52%, #080d10 100%);
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-3xl font-bold leading-tight sm:text-4xl;
+  }
+
+  .section-lead {
+    @apply text-base leading-8 text-muted sm:text-lg;
+  }
+
+  .supporting-heading {
+    @apply text-sm font-semibold text-white;
+  }
+
+  .supporting-text {
+    @apply text-sm leading-7 text-muted;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-[0.22em];
+  }
+
+  .eyebrow-small {
+    @apply text-[10px] uppercase tracking-[0.2em];
+  }
+}
