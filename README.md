@@ -1,16 +1,72 @@
-# React + Vite
+# Zaw Hlyan Htet | Frontend Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with React and Vite to present my experience, frontend engineering work, and approach to building web applications.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project serves as a professional portfolio and includes:
 
-## React Compiler
+- professional experience and background
+- frontend engineering skills and technologies
+- selected work and case studies
+- a responsive interface designed for clear content presentation
+- contact information for professional opportunities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The design follows a clean, premium light theme with an editorial approach, focusing on typography, layout, and visual hierarchy.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- React Router
+
+## Features
+
+- responsive design across desktop and mobile
+- route-based navigation
+- reusable UI components and styling patterns
+- structured content and case-study layouts
+- light-themed design system
+- direct email contact CTA
+
+## Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```text
+src/
+  scenes/
+  assets/
+  index.css
+  main.jsx
+public/
+```
+
+## Contact
+
+Email: [zawhlyanhtet@gmail.com](mailto:zawhlyanhtet@gmail.com)
+
+## Notes
+
+- Content is tailored for professional portfolio presentation.
+- Screenshots are sanitized and use generic or fictional content where appropriate.
