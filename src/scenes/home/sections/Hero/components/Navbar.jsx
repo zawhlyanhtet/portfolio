@@ -3,6 +3,7 @@ import { navItems } from "../../../contents";
 import { twMerge } from "tailwind-merge";
 import MenuButton from "../../../components/MenuButton";
 import MobileAside from "./MobileAside";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,13 +48,13 @@ export default function Navbar() {
             className={`hidden lg:flex flex-wrap items-center gap-5 text-sm ${scrolled ? "text-white/80" : "text-primary/80"}`}
           >
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                to={`/#${item.toLowerCase()}`}
                 className={`transition ${scrolled ? "hover:text-white" : "hover:text-primary"}`}
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </nav>
 
