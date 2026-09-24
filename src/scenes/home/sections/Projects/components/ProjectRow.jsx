@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import ExternalLinkIcon from "../../../components/ExternalLinkIcon";
 import Tag from "../../../components/Tag";
 
 export default function ProjectRow({ project }) {
@@ -25,7 +26,7 @@ export default function ProjectRow({ project }) {
           >
             View Case Study
             <span className="ml-2" aria-hidden="true">
-              ↗
+              <ExternalLinkIcon />
             </span>
           </Link>
         ) : (

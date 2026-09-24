@@ -1,3 +1,4 @@
+import ExternalLinkIcon from "../../components/ExternalLinkIcon";
 import { EMAIL_URL, socials } from "../../contents";
 
 export default function ContactSection() {
@@ -32,7 +33,9 @@ export default function ContactSection() {
                 className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_30px_rgba(0,117,222,0.18)] transition hover:-translate-y-0.5 hover:bg-accent/90"
               >
                 Start a conversation
-                <span className="ml-2 text-base leading-none">↗</span>
+                <span className="ml-2" aria-hidden="true">
+                  <ExternalLinkIcon />
+                </span>
               </a>
             </div>
           </div>
