@@ -117,7 +117,7 @@ const workApproach = [
 ];
 
 const GITHUB_URL = "https://github.com/zawhlyanhtet";
-const LINKEDIN_URL = "https://www.linkedin.com/in/zaw-hlyan-htet-7894aa400/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/zaw-hlyan-htet-7894aa400";
 const EMAIL_URL = "mailto:zawhlyanhtet@gmail.com";
 
 const socials = [
