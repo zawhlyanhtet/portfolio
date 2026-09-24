@@ -3,7 +3,7 @@ export default function LinesSvg() {
     <svg
       aria-hidden="true"
       viewBox="0 0 260 30"
-      className="pointer-events-none absolute -bottom-3 left-0 h-5 w-full text-accentsoft/60"
+      className="pointer-events-none absolute -bottom-3 left-0 h-5 w-full text-accent/60"
       fill="none"
     >
       <path

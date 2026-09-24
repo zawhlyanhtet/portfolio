@@ -19,17 +19,17 @@ export default function RoleSection() {
         />
       </div>
 
-      <div className="mt-14 divide-y divide-white/10 border-y border-white/10">
+      <div className="mt-14 divide-y divide-primary/10 border-y border-primary/10">
         {roleHighlights.map((item, index) => (
           <div
             key={item.title}
             className="grid gap-3 py-6 sm:grid-cols-[4rem_13rem_1fr] sm:gap-6"
           >
-            <span className="pt-1 font-mono text-xs tracking-[0.2em] text-accentsoft">
+            <span className="pt-1 font-mono text-xs tracking-[0.2em] text-accent">
               {String(index + 1).padStart(2, "0")}
             </span>
 
-            <h3 className="text-lg font-semibold text-white">{item.title}</h3>
+            <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
 
             <p className="supporting-text">{item.description}</p>
           </div>

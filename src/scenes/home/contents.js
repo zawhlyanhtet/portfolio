@@ -116,21 +116,25 @@ const workApproach = [
   },
 ];
 
+const GITHUB_URL = "https://github.com/zawhlyanhtet";
+const LINKEDIN_URL = "https://www.linkedin.com/in/zaw-hlyan-htet-7894aa400/";
+const EMAIL_URL = "mailto:zawhlyanhtet@gmail.com";
+
 const socials = [
   {
     label: "GitHub",
     icon: "GH",
-    href: "https://github.com/zawhlyanhtet",
+    href: GITHUB_URL,
   },
   {
     label: "LinkedIn",
     icon: "in",
-    href: "https://www.linkedin.com/in/zaw-hlyan-htet-7894aa400/",
+    href: LINKEDIN_URL,
   },
   {
     label: "Email",
     icon: "@",
-    href: "mailto:zawhlyanhtet@gmail.com",
+    href: EMAIL_URL,
   },
 ];
 
@@ -142,4 +146,7 @@ export {
   skillGroups,
   workApproach,
   socials,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  EMAIL_URL,
 };

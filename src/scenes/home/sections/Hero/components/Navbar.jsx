@@ -33,45 +33,54 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <header
-      className={twMerge(
-        "fixed left-0 top-0 z-50 w-full px-4 py-5 transition-all duration-300 md:px-6 lg:px-8",
-        scrolled
-          ? "border-b border-white/10 backdrop-blur"
-          : "border-b border-transparent bg-transparent",
-      )}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between">
-        <nav className="hidden lg:flex flex-wrap items-center gap-5 text-sm font-medium text-mist">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="transition hover:text-white"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-        <a
-          href="/resume.pdf"
-          download="Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
-          className="hidden lg:flex items-center justify-center rounded-xl border border-white/10 bg-white/4 px-6 py-2 text-sm font-semibold text-white transition hover:border-white/20 hover:bg-white/8"
-        >
-          Resume
-        </a>
+    <>
+      <header
+        className={twMerge(
+          `fixed left-0 top-0 w-full px-4 py-2 transition-all duration-300 md:px-6 lg:px-8 ${menuOpen ? "z-50" : "z-30"}`,
+          scrolled && !menuOpen
+            ? "bg-[rgba(29,29,31,0.8)] backdrop-blur-[20px] backdrop-saturate-180"
+            : "",
+        )}
+      >
+        <div className="mx-auto flex max-w-6xl items-center justify-between">
+          <nav
+            className={`hidden lg:flex flex-wrap items-center gap-5 text-sm ${scrolled ? "text-white/80" : "text-primary/80"}`}
+          >
+            {navItems.map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className={`transition ${scrolled ? "hover:text-white" : "hover:text-primary"}`}
+              >
+                {item}
+              </a>
+            ))}
+          </nav>
 
-        <MenuButton
-          open={menuOpen}
-          onClick={() => setMenuOpen((open) => !open)}
-        />
-      </div>
+          <a
+            href="/resume.pdf"
+            download="Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
+            className={`hidden items-center justify-center rounded-xl border px-6 py-2 text-sm font-medium transition lg:flex ${
+              scrolled
+                ? "border-white bg-white text-primary hover:bg-white/90"
+                : "border-primary/10 bg-white text-primary hover:border-primary/20 hover:bg-primary/7"
+            }`}
+          >
+            Resume
+          </a>
 
+          <MenuButton
+            open={menuOpen}
+            scrolled={scrolled}
+            onClick={() => setMenuOpen((open) => !open)}
+          />
+        </div>
+      </header>
       <MobileAside
         navItems={navItems}
         open={menuOpen}
         onClose={() => setMenuOpen(false)}
       />
-    </header>
+    </>
   );
 }

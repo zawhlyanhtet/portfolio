@@ -12,7 +12,7 @@ function MenuLine({ className }) {
   );
 }
 
-export default function MenuButton({ open, onClick }) {
+export default function MenuButton({ open, scrolled, onClick }) {
   return (
     <button
       type="button"
@@ -20,7 +20,7 @@ export default function MenuButton({ open, onClick }) {
       aria-expanded={open}
       aria-label={open ? "Close navigation menu" : "Open navigation menu"}
       onClick={onClick}
-      className="relative z-60 ml-auto flex h-9.5 w-9.5 items-center justify-center text-mist transition hover:text-white lg:hidden"
+      className={`relative z-50 ml-auto flex h-9.5 w-9.5 items-center justify-center transition hover:text-accent lg:hidden ${open ? "text-white" : !scrolled ? "text-primary" : "text-white"}`}
     >
       <MenuLine className={open ? "rotate-45" : "-translate-y-1.5"} />
 

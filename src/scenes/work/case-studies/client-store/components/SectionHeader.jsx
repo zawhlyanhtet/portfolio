@@ -9,7 +9,7 @@ export default function SectionHeader({
 }) {
   return (
     <>
-      <p className="eyebrow text-accentsoft">{eyebrow}</p>
+      <p className="eyebrow text-accent">{eyebrow}</p>
       <h2 className={twMerge("section-heading mt-4 mb-6", titleClassName)}>
         {title}
       </h2>

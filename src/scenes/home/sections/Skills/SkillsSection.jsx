@@ -16,8 +16,8 @@ export default function SkillsSection() {
           {skillGroups.map((group) => (
             <div key={group.category} className="pt-2">
               <div className="flex items-center gap-3">
-                <span className="h-1.5 w-1.5 rounded-full bg-accentsoft" />
-                <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-white">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-primary">
                   {group.category}
                 </h3>
               </div>
@@ -33,10 +33,10 @@ export default function SkillsSection() {
           ))}
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-10">
+        <div className="mt-10 border-t border-primary/10 pt-10">
           <div className="flex items-center gap-2.5">
-            <span className="h-px w-8 bg-accentsoft/60" />
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accentsoft">
+            <span className="h-px w-8 bg-accent/60" />
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
               How I work
             </p>
           </div>
@@ -44,16 +44,16 @@ export default function SkillsSection() {
           <div className="mt-6 grid gap-8 md:grid-cols-3 md:gap-10">
             {workApproach.map((step) => (
               <div key={step.number} className="flex items-start gap-4">
-                <span className="pt-1 font-mono text-xs font-medium tracking-wider text-accentsoft/70">
+                <span className="pt-1 font-mono text-xs font-medium tracking-wider text-accent">
                   {step.number}
                 </span>
 
                 <div>
-                  <h3 className="text-base font-semibold text-white">
+                  <h3 className="text-base font-semibold text-primary">
                     {step.title}
                   </h3>
 
-                  <p className="mt-1 text-sm leading-6 text-muted">
+                  <p className="mt-1 text-sm leading-6 text-normal">
                     {step.description}
                   </p>
                 </div>

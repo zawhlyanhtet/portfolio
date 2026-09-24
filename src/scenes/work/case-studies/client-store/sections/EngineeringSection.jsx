@@ -10,28 +10,30 @@ export default function EngineeringSection() {
           eyebrow="Key engineering work"
           title="The core value was making complex operations feel structured and
           scalable."
-          description="This section focuses on implementation decisions behind the product
-          workflows shown above."
         />
       </div>
 
-      <div className="mt-12 grid gap-5 md:grid-cols-3">
-        {engineeringWork.map((item) => (
-          <article
-            key={item.title}
-            className="border border-white/10 bg-white/2 p-6"
-          >
-            <p className="eyebrow-small font-semibold text-accentsoft">
-              Engineering focus
-            </p>
-            <h3 className="mt-5 text-xl font-semibold text-white sm:text-2xl">
-              {item.title}
-            </h3>
-            <p className="mt-4 text-base leading-8 text-muted">
-              {item.description}
-            </p>
-          </article>
-        ))}
+      <div className="mt-12 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+        <div>
+          <p className="section-lead">
+            The frontend had to support reusable patterns, workflow-aware
+            permissions, and data structures that could evolve without breaking
+            the experience.
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {engineeringWork.map((item) => (
+            <div key={item.title} className="border-l border-primary/10 pl-4">
+              <p className="eyebrow-small font-medium text-accent">
+                {item.title}
+              </p>
+              <p className="mt-3 text-sm leading-7 text-normal">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );

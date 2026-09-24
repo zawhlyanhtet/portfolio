@@ -12,7 +12,7 @@ export default function ProjectsSection() {
           description="Selected professional work where I led frontend development."
         />
 
-        <div className="divide-y divide-white/10">
+        <div className="divide-y divide-primary/10">
           {selectedWork.map((project) => (
             <ProjectRow key={project.number} project={project} />
           ))}

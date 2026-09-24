@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -10,7 +10,7 @@ html {
 
 body {
   min-width: 320px;
-  background: #0b1013;
+  background: #f5f5f7;
   font-family: "Manrope", sans-serif;
 }
 
@@ -21,16 +21,12 @@ body {
 @theme {
   --font-manrope: Manrope, sans-serif;
 
-  --color-ink: #0b1013;
-  /* --color-panel: #15161c; */
-  /* --color-line: rgba(255, 255, 255, 0.09); */
-  --color-mist: #b3b6d4;
-  --color-muted: #aeb1ba;
+  --color-background: #f5f5f7;
+  --color-primary: #1d1d1f;
+  --color-normal: #3a3a3c;
+  --color-muted: #6e6e73;
 
-  --color-accent: #7f8bff;
-  --color-accentsoft: #99a4ff;
-
-  /* --shadow-glow: 0 24px 80px rgba(16, 18, 28, 0.28); */
+  --color-accent: #0075de;
 }
 
 @layer utilities {
@@ -38,28 +34,28 @@ body {
     background-image:
       radial-gradient(
         circle at top,
-        rgba(255, 255, 255, 0.03),
+        rgba(0, 117, 222, 0.06),
         transparent 25.5%
       ),
-      linear-gradient(180deg, #0b1013 0%, #0a0f12 52%, #080d10 100%);
+      linear-gradient(180deg, #f5f5f7 0%, #ffffff 52%, #f5f5f7 100%);
   }
 }
 
 @layer components {
   .section-heading {
-    @apply text-3xl font-bold leading-tight sm:text-4xl;
+    @apply text-3xl font-bold leading-tight tracking-[-0.04em] sm:text-4xl text-primary;
   }
 
   .section-lead {
-    @apply text-base leading-8 text-muted sm:text-lg;
+    @apply text-base leading-8 text-normal sm:text-lg;
   }
 
   .supporting-heading {
-    @apply text-sm font-semibold text-white;
+    @apply text-sm font-semibold tracking-[-0.01em] text-normal;
   }
 
   .supporting-text {
-    @apply text-sm leading-7 text-muted;
+    @apply text-[15px] leading-7 text-normal;
   }
 
   .eyebrow {
@@ -67,6 +63,6 @@ body {
   }
 
   .eyebrow-small {
-    @apply text-[10px] uppercase tracking-[0.2em];
+    @apply text-[10px] font-semibold uppercase tracking-[0.18em];
   }
 }

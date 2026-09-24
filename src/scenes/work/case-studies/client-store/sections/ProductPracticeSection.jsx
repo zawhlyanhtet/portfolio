@@ -17,31 +17,31 @@ export default function ProductPracticeSection() {
 
       <div className="mt-12 grid gap-5 md:grid-cols-2">
         {productPractice.map((item) => (
-          <div
+          <figure
             key={item.title}
-            className="overflow-hidden border border-white/10 bg-white/2.5"
+            className="overflow-hidden rounded-xl border border-primary/10 bg-white/80"
           >
-            <div className="border-b border-white/10 px-5 py-4">
-              <span className="eyebrow-small font-semibold text-accentsoft">
+            <div className="px-5 pb-3 pt-5">
+              <span className="eyebrow-small font-medium text-accent">
                 {item.title}
               </span>
             </div>
 
-            <div className="bg-black/20">
+            <div className="bg-white">
               <img
                 src={item.screenshot}
                 alt={item.alt}
-                className="h-full w-full object-contain"
+                className="h-auto w-full block"
               />
             </div>
-            <p className="border-t border-white/10 px-5 py-4 text-sm leading-6 text-muted">
+            <figcaption className="px-5 pb-5 pt-4 text-sm leading-6 text-normal">
               {item.description}
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         ))}
       </div>
 
-      <p className="supporting-text max-w-3xl mt-6">
+      <p className="mt-6 max-w-3xl border-l border-primary/10 pl-4 supporting-text text-muted">
         Screenshots are sanitized portfolio representations using fictional
         content and generic terminology. They illustrate the underlying
         workflows without exposing real company or user data.

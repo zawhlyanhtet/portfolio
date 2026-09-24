@@ -15,42 +15,41 @@ export default function ProductContextSection() {
         />
       </div>
       <div className="max-w-4xl">
-        <div className="mt-10 rounded-2xl border border-white/10 bg-black/15 p-6 sm:p-8">
+        <div className="mt-10 rounded-xl bg-white p-6 sm:p-8">
           <div className="mx-auto max-w-xl text-center">
-            <p className="eyebrow-small text-accentsoft">Shared platform</p>
-            <p className="supporting-heading mt-3">
+            <p className="eyebrow-small text-accent">Shared platform</p>
+            <p className="supporting-heading mt-3 text-primary">
               Two user groups with configurable role-based permissions
             </p>
           </div>
-
-          <div className="mx-auto mt-6 h-6 w-px bg-white/20" />
-
-          <div className="grid gap-4 md:grid-cols-2 md:gap-6">
-            <div className="border border-white/10 bg-white/2 p-5">
-              <p className="text-center eyebrow-small text-accentsoft">
+          <div className="mx-auto mt-6 h-6 w-px bg-primary/20" />
+          <div className="grid gap-4 md:grid-cols-2 md:gap-0 md:[&>*:first-child]:pr-6 md:[&>*:last-child]:pl-6">
+            <div className="p-5">
+              <p className="text-center eyebrow-small text-accent">
                 Platform users
               </p>
-              <div className="mt-5 space-y-3 border-t border-white/10 pt-4">
-                <p className="supporting-heading">
-                  Multiple roles with configurable permissions
+              <div className="mt-5 border-t border-primary/10 pt-4">
+                <p className="supporting-heading text-primary">
+                  Platform-side roles
                 </p>
-                <p className="text-sm leading-6 text-muted">
-                  Platform operations: client organizations, templates, stores,
-                  and user access.
+                <p className="mt-3 text-sm leading-6 text-normal">
+                  Managed organization settings, stores, templates, and user
+                  access across the platform.
                 </p>
               </div>
             </div>
-            <div className="border border-accent/40 bg-accent/8 p-5">
-              <p className="text-center eyebrow-small text-accentsoft">
+
+            <div className="p-5">
+              <p className="text-center eyebrow-small text-accent">
                 Client users
               </p>
-              <div className="mt-5 space-y-3 border-t border-white/10 pt-4">
-                <p className="supporting-heading">
-                  Multiple roles with configurable permissions
+              <div className="mt-5 border-t border-primary/10 pt-4">
+                <p className="supporting-heading text-primary">
+                  Client-side roles
                 </p>
-                <p className="text-sm leading-6 text-muted">
-                  Organization-scoped operations: stores, business data, and
-                  client users.
+                <p className="mt-3 text-sm leading-6 text-normal">
+                  Worked inside each organization to manage stores, business
+                  data, and user workflows within their assigned scope.
                 </p>
               </div>
             </div>

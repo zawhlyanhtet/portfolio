@@ -10,7 +10,7 @@ import TakeawaysSection from "./sections/TakeawaysSection";
 
 export default function ClientStoreCaseStudyPage() {
   return (
-    <main className="bg-haze text-white">
+    <main className="bg-background text-primary">
       <PageNavbar />
       <CaseStudyHero />
       <ProductContextSection />

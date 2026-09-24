@@ -26,13 +26,13 @@ export default function ChallengeSection() {
             {productChallenges.map((item, index) => (
               <article
                 key={item.title}
-                className={`border-t border-white/10 pt-5 ${
+                className={`border-t border-primary/10 pt-5 ${
                   index === productChallenges.length - 1
                     ? "md:col-span-2 md:mx-auto"
                     : ""
                 }`}
               >
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-primary">
                   {item.title}
                 </h3>
                 <p className="supporting-text mt-3">{item.description}</p>

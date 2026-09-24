@@ -16,7 +16,7 @@ export default function MobileAside({ navItems, open, onClose }) {
       <aside
         id="mobile-navigation"
         className={twMerge(
-          "fixed inset-y-0 right-0 top-0 z-40 flex w-full flex-col overflow-y-auto bg-ink px-8 pb-8 pt-24 shadow-[-24px_0_80px_rgba(0,0,0,0.35)] transition-transform duration-400 sm:w-[60%] md:w-[45%] lg:hidden",
+          "fixed inset-y-0 right-0 top-0 z-40 flex w-full flex-col overflow-y-auto bg-primary px-8 pb-8 pt-24 text-white transition-transform duration-400 sm:w-[60%] md:w-[45%] lg:hidden",
           open ? "translate-x-0" : "pointer-events-none translate-x-full",
         )}
         aria-hidden={!open}
@@ -25,7 +25,7 @@ export default function MobileAside({ navItems, open, onClose }) {
           <h2 className="mt-4 text-3xl font-bold leading-tight text-white">
             Explore the work.
           </h2>
-          <p className="mt-3 max-w-xs text-sm leading-6 text-muted">
+          <p className="mt-3 max-w-xs text-sm leading-6 text-white/70">
             Frontend systems, product thinking, and selected work.
           </p>
         </div>
@@ -35,10 +35,10 @@ export default function MobileAside({ navItems, open, onClose }) {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="flex items-center justify-between border-b border-white/5 py-5 text-sm font-semibold text-mist transition last:border-b-0 hover:text-white"
+              className="flex items-center justify-between border-b border-white/10 py-5 text-sm font-semibold text-white/70 transition last:border-b-0 hover:text-white"
             >
               <span>{item}</span>
-              <span className="font-mono text-[10px] tracking-[0.2em] text-accentsoft/70">
+              <span className="font-mono text-[10px] tracking-[0.2em] text-accent/80">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </a>
@@ -46,15 +46,15 @@ export default function MobileAside({ navItems, open, onClose }) {
         </nav>
 
         <div className="mt-auto pt-10">
-          <p className="eyebrow-small text-muted">More about my work</p>
+          <p className="eyebrow-small text-white/60">More about my work</p>
           <a
             href="/resume.pdf"
             download="Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
-            className="mt-4 inline-flex w-full items-center justify-between border border-accent/40 bg-accent/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-accent/20"
+            className="mt-4 inline-flex w-full items-center justify-between bg-white px-4 py-3 text-sm font-semibold text-primary transition hover:bg-white/90"
           >
             <span>Download resume</span>
             <span
-              className="text-base leading-none text-accentsoft"
+              className="text-base leading-none text-accent"
               aria-hidden="true"
             >
               ↓

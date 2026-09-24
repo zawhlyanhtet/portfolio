@@ -15,16 +15,18 @@ export default function OutcomeSection() {
         />
       </div>
 
-      <div className="mt-10 grid border-y border-white/10 md:grid-cols-3 md:divide-x md:divide-white/10">
-        {outcomes.map((item, index) => (
-          <div
-            key={item.title}
-            className={`py-6 ${index > 0 ? "border-t border-white/10 md:border-t-0 md:px-6" : "md:pr-6"} ${index === outcomes.length - 1 ? "md:pl-6" : ""}`}
-          >
-            <h3 className="text-lg font-semibold text-white">{item.title}</h3>
-            <p className="supporting-text mt-3">{item.description}</p>
-          </div>
-        ))}
+      <div className="mt-10">
+        <div className="grid gap-8 py-8 md:grid-cols-3 md:gap-0">
+          {outcomes.map((item, index) => (
+            <div
+              key={item.title}
+              className={`md:px-6 ${index > 0 ? "border-t border-primary/10 pt-8 md:border-t-0 md:border-l md:pt-0" : ""}`}
+            >
+              <h3 className="text-lg font-semibold text-primary">{item.title}</h3>
+              <p className="supporting-text mt-3">{item.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );

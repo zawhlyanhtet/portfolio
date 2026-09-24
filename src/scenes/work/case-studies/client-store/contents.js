@@ -3,6 +3,34 @@ import templateBuilderScreenshot from "../../../../assets/client-store-managemen
 import roleBasedAccessScreenshot from "../../../../assets/client-store-management-permission-settings.png";
 import organizationManagementScreenshot from "../../../../assets/client-store-management-organization-management.png";
 
+const metadata = [
+  { label: "Role", value: "Frontend Engineer" },
+  { label: "Timeline", value: "Sep 2023 – Dec 2025" },
+  { label: "Contribution", value: "~90% frontend ownership" },
+  {
+    label: "Focus",
+    value: "Multi-tenant · RBAC · Configurable UI",
+  },
+];
+
+const summaryCards = [
+  {
+    label: "Product",
+    description:
+      "Shared platform for managing multiple client organizations with separate operational boundaries and clear business scope.",
+  },
+  {
+    label: "Challenge",
+    description:
+      "Role-based access, configurable store data, and large operational datasets created a complex frontend environment that needed clear structure and stable patterns.",
+  },
+  {
+    label: "Direction",
+    description:
+      "Owned the frontend development and translated business rules into reusable workflows, permission-aware interfaces, and scalable administrative patterns.",
+  },
+];
+
 const productPractice = [
   {
     title: "Client organization management",
@@ -107,6 +135,8 @@ const outcomes = [
 ];
 
 export {
+  metadata,
+  summaryCards,
   productPractice,
   productChallenges,
   roleHighlights,

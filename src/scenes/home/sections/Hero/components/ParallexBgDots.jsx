@@ -17,10 +17,10 @@ export default function ParallexBgDots() {
 
   return (
     <div
-      className="pointer-events-none absolute inset-0 -z-10 opacity-[0.32] transition-transform duration-200 ease-out"
+      className="pointer-events-none absolute inset-0 z-0 transition-transform duration-200 ease-out"
       style={{ transform: `translate3d(0, ${heroParallax}px, 0)` }}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.95)_0.9px,transparent_1px)] bg-size-[42px_42px] mask-[radial-gradient(circle_at_center,black_18%,transparent_72%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(29,29,31,0.5)_0.9px,transparent_1px)] bg-size-[42px_42px] mask-[radial-gradient(circle_at_center,black_18%,transparent_72%)]" />
     </div>
   );
 }
