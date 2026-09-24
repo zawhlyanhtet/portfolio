@@ -20,17 +20,17 @@ export default function AboutSection() {
             architecture and practical usability.
           </p>
 
-          <div className="mt-8 grid max-w-xl grid-cols-3 py-5">
-            <StatItem value="4+" label="Years Experience" className="pr-4" />
+          <div className="mt-8 grid max-w-xl gap-y-4 py-3 sm:grid-cols-3 sm:gap-y-0">
+            <StatItem value="4+" label="Years Experience" className="sm:pr-4" />
             <StatItem
               value="8+"
               label="Projects Delivered"
-              className="border-l border-primary/10 px-4"
+              className="border-t border-primary/10 pt-4 sm:border-l sm:border-t-0 sm:pt-0 sm:px-4"
             />
             <StatItem
               value="Frontend"
               label="Engineering Focus"
-              className="border-l border-primary/10 pl-4"
+              className="border-t border-primary/10 pt-4 sm:border-l sm:border-t-0 sm:pt-0 sm:pl-4"
             />
           </div>
         </div>
