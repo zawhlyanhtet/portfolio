@@ -11,7 +11,7 @@ export default function AboutSection() {
             Profile
           </h2>
           <p className="mt-8 max-w-xl text-base leading-7 text-normal">
-            I&apos;m a frontend engineer with 4+ years of experience building
+            I&apos;m a frontend engineer with 3+ years of experience building
             production web applications with React and TypeScript.
           </p>
           <p className="mt-2 max-w-xl text-base leading-7 text-normal">
@@ -21,7 +21,7 @@ export default function AboutSection() {
           </p>
 
           <div className="mt-8 grid max-w-xl gap-y-4 py-3 sm:grid-cols-3 sm:gap-y-0">
-            <StatItem value="4+" label="Years Experience" className="sm:pr-4" />
+            <StatItem value="3+" label="Years Experience" className="sm:pr-4" />
             <StatItem
               value="8+"
               label="Projects Delivered"

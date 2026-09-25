@@ -1,7 +1,7 @@
 const navItems = ["About", "Experience", "Projects", "Skills", "Contact"];
 
 const heroProof = [
-  { value: "4+", label: "Years building production applications" },
+  { value: "3+", label: "Years building production applications" },
   { value: "8+", label: "Projects delivered" },
   { value: "React", label: "Frontend engineering with TypeScript" },
 ];
