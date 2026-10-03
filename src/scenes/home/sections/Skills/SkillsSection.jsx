@@ -1,39 +1,54 @@
-import SectionHeader from "../../components/SectionHeader";
-import Tag from "../../components/Tag";
-import { skillGroups, workApproach } from "../../contents";
+import { skillGroups } from "../../contents";
 
 export default function SkillsSection() {
   return (
     <section id="skills" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="relative mx-auto max-w-6xl">
-        <SectionHeader
-          eyebrow="What I work with"
-          title="Skills in practice"
-          description="Tools and patterns I use to build maintainable, user-focused web applications."
-        />
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+            What I work with
+          </p>
+          <h2 className="mt-3 section-heading tracking-tight">
+            Skills in practice
+          </h2>
+          <p className="mt-4 max-w-2xl text-sm leading-6 text-normal">
+            Tools and patterns I use to build maintainable, user-focused web
+            applications.
+          </p>
+        </div>
 
-        <div className="mt-10 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 flex flex-col gap-6">
           {skillGroups.map((group) => (
-            <div key={group.category} className="pt-2">
-              <div className="flex items-center gap-3">
-                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                <h3 className="text-sm font-semibold uppercase tracking-[0.14em] text-primary">
-                  {group.category}
-                </h3>
-              </div>
+            <div
+              key={group.category}
+              className="grid gap-2 sm:grid-cols-[12rem_minmax(0,1fr)] sm:gap-8"
+            >
+              <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">
+                {group.category}
+              </h3>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {group.skills.map((skill) => (
-                  <Tag key={skill} variant="skill">
+              <p className="flex flex-wrap gap-x-2 text-sm leading-6 text-normal">
+                {group.skills.map((skill, index) => (
+                  <span key={skill}>
                     {skill}
-                  </Tag>
+                    {index < group.skills.length - 1 && (
+                      <span className="ml-2" aria-hidden="true">
+                        ·
+                      </span>
+                    )}
+                  </span>
                 ))}
-              </div>
+              </p>
             </div>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="mt-10 border-t border-primary/10 pt-10">
+{
+  /* <div className="mt-10 border-t border-primary/10 pt-10">
           <div className="flex items-center gap-2.5">
             <span className="h-px w-8 bg-accent/60" />
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
@@ -60,8 +75,5 @@ export default function SkillsSection() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-    </section>
-  );
+        </div> */
 }

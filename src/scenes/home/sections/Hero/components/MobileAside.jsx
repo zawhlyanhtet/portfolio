@@ -22,7 +22,7 @@ export default function MobileAside({ navItems, open, onClose }) {
         aria-hidden={!open}
       >
         <div className="pb-8">
-          <h2 className="mt-4 text-3xl font-bold leading-tight text-white">
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-white tracking-tight">
             Explore the work.
           </h2>
           <p className="mt-3 max-w-xs text-sm leading-6 text-white/70">
@@ -38,7 +38,7 @@ export default function MobileAside({ navItems, open, onClose }) {
               className="flex items-center justify-between border-b border-white/10 py-5 text-sm font-semibold text-white/70 transition last:border-b-0 hover:text-white"
             >
               <span>{item}</span>
-              <span className="font-mono text-[10px] tracking-[0.2em] text-accent/80">
+              <span className="font-mono text-[10px] font-light tracking-[0.2em] text-muted">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </a>

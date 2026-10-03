@@ -1,4 +1,4 @@
-const navItems = ["About", "Experience", "Projects", "Skills", "Contact"];
+const navItems = ["Profile", "Experience", "Projects", "Skills", "Contact"];
 
 const heroProof = [
   { value: "3+", label: "Years building production applications" },
@@ -9,19 +9,29 @@ const heroProof = [
 const experience = [
   {
     company: "Engineering Co., Ltd.",
+    title: "Frontend Engineer",
     period: "May 2023 – Dec 2025",
-    highlights: [
-      "Led frontend development for enterprise SaaS applications using React, Redux Toolkit, and Material UI.",
-      "Developed complex business workflows including dynamic form builders, role-based access control (RBAC), data tables, and file management.",
-      "Built map-based geographic targeting with Google Maps and GeoJSON for an advertising distribution platform with role-based administration.",
+    summary:
+      "Owned frontend development across production SaaS and business applications, building data-intensive workflows, configurable interfaces, and reusable UI systems for enterprise products.",
+    focus: [
+      "Multi-tenant platforms",
+      "RBAC",
+      "Data-intensive interfaces",
+      "Form builders",
+      "Geospatial workflows",
     ],
   },
   {
     company: "App.com.mm",
+    title: "Frontend Developer",
     period: "Oct 2022 – May 2023",
-    highlights: [
-      "Developed React applications including ERP dashboards and a Progressive Web App (PWA).",
-      "Built responsive, reusable interfaces and integrated backend APIs for production business applications.",
+    summary:
+      "Built production web applications and landing pages using React, including an ERP platform and a Progressive Web App (PWA), with a focus on reusable interfaces and API-driven workflows.",
+    focus: [
+      "ERP dashboards",
+      "Progressive Web Apps",
+      "Landing pages",
+      "API integration",
     ],
   },
 ];
@@ -90,29 +100,8 @@ const skillGroups = [
     skills: ["Material UI", "React Hook Form"],
   },
   {
-    category: "Tools & Testing",
+    category: "Development",
     skills: ["Git", "GitHub", "GitLab", "Cypress"],
-  },
-];
-
-const workApproach = [
-  {
-    number: "01",
-    title: "Understand",
-    description:
-      "Break complex business requirements into clear user flows and interfaces.",
-  },
-  {
-    number: "02",
-    title: "Build",
-    description:
-      "Develop reusable React components and maintainable frontend patterns.",
-  },
-  {
-    number: "03",
-    title: "Refine",
-    description:
-      "Improve usability, consistency, and performance through careful iteration.",
   },
 ];
 
@@ -144,7 +133,6 @@ export {
   experience,
   selectedWork,
   skillGroups,
-  workApproach,
   socials,
   GITHUB_URL,
   LINKEDIN_URL,

@@ -61,13 +61,19 @@ export default function Navbar() {
           <a
             href="/resume.pdf"
             download="Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
-            className={`hidden items-center justify-center rounded-xl border px-6 py-2 text-sm font-medium transition lg:flex ${
+            className={`hidden gap-1 items-center rounded-xl border px-6 py-2 text-sm font-medium transition lg:inline-flex ${
               scrolled
                 ? "border-white bg-white text-primary hover:bg-white/90"
                 : "border-primary/10 bg-white text-primary hover:border-primary/20 hover:bg-primary/7"
             }`}
           >
             Resume
+            <span
+              className="text-base leading-none text-accent"
+              aria-hidden="true"
+            >
+              ↓
+            </span>
           </a>
 
           <MenuButton

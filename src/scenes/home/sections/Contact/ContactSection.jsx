@@ -3,27 +3,22 @@ import { EMAIL_URL, socials } from "../../contents";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="px-4 pb-4 pt-16 sm:px-6 lg:px-8">
+    <section id="contact" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
-        <div className="relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/3 px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
+        <div className="rounded-2xl border border-primary/10 bg-primary/3 px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
           <div className="relative flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-                <span className="h-2 w-2 rounded-full bg-accent" />
-                Available for new opportunities
+              <div className="eyebrow font-semibold text-muted">
+                Get in touch
               </div>
 
-              <h2 className="mt-5 text-3xl font-bold text-primary sm:text-5xl">
-                Let&apos;s work{" "}
-                <span className="bg-linear-to-br from-primary via-accent to-accent bg-clip-text text-transparent">
-                  together.
-                </span>
+              <h2 className="mt-5 text-3xl font-bold tracking-tight text-primary sm:text-5xl">
+                Building something complex?
               </h2>
 
               <p className="mt-5 max-w-xl text-base leading-7 text-normal sm:text-lg">
                 Have a complex business application that needs a reliable
-                frontend? I&apos;d love to hear what you&apos;re building and
-                discuss how I can help.
+                frontend? Tell me what you&apos;re building and let&apos;s talk.
               </p>
             </div>
 
