@@ -7,11 +7,11 @@ export default function ExperienceSection() {
         <h2 className="text-3xl font-medium tracking-tight text-primary sm:text-4xl">
           Experience
         </h2>
-        <div className="mt-10 flex flex-col gap-y-6 sm:gap-y-10">
+        <div className="mt-10 flex flex-col gap-y-8 sm:gap-y-10">
           {experience.map((role) => (
             <article
               key={role.company}
-              className="grid grid-cols-2 gap-x-3 gap-y-6 md:grid-cols-[minmax(0,0.45fr)_minmax(0,1.3fr)_minmax(0,0.62fr)] lg:grid-cols-[minmax(0,0.4fr)_minmax(0,1.2fr)_minmax(0,0.4fr)] md:gap-x-0"
+              className="grid grid-cols-2 gap-x-3 gap-y-3 md:grid-cols-[minmax(0,0.45fr)_minmax(0,1.3fr)_minmax(0,0.62fr)] lg:grid-cols-[minmax(0,0.4fr)_minmax(0,1.2fr)_minmax(0,0.4fr)] md:gap-x-0 md:gap-y-6"
             >
               <p className="col-span-2 self-center text-[13px] tabular-nums text-muted md:col-span-1">
                 {role.period}
