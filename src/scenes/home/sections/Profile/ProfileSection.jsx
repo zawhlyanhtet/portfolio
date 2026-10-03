@@ -22,22 +22,22 @@ export default function ProfileSection() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-wrap gap-x-12 gap-y-6">
-          <div className="py-5 sm:pr-6">
+        <div className="mt-17 flex flex-wrap gap-x-12 gap-y-12 sm:gap-x-24">
+          <div>
             <p className="text-2xl font-medium tracking-tight text-primary">
               3+
             </p>
             <p className="mt-1 text-sm text-muted">Years Experience</p>
           </div>
 
-          <div className="py-5 sm:px-6">
+          <div>
             <p className="text-2xl font-medium tracking-tight text-primary">
               8+
             </p>
             <p className="mt-1 text-sm text-muted">Projects Delivered</p>
           </div>
 
-          <div className="py-5 sm:px-6">
+          <div>
             <p className="text-2xl font-medium tracking-tight text-primary">
               Complex UI
             </p>
