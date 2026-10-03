@@ -22,7 +22,7 @@ export default function MobileAside({ navItems, open, onClose }) {
         aria-hidden={!open}
       >
         <div className="pb-8">
-          <h2 className="mt-4 text-3xl font-bold leading-tight text-white tracking-tight">
+          <h2 className="mt-4 text-3xl font-medium leading-tight text-white tracking-tight">
             Explore the work.
           </h2>
           <p className="mt-3 max-w-xs text-sm leading-6 text-white/70">

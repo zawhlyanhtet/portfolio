@@ -24,7 +24,9 @@ export default function CaseStudyHero() {
             {metadata.map((item) => (
               <div key={item.label}>
                 <dt className="eyebrow-small text-muted">{item.label}</dt>
-                <dd className="supporting-heading mt-2">{item.value}</dd>
+                <dd className="supporting-heading font-medium mt-2">
+                  {item.value}
+                </dd>
               </div>
             ))}
           </div>

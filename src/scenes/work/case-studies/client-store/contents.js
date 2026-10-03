@@ -118,9 +118,9 @@ const engineeringWork = [
 
 const outcomes = [
   {
-    title: "Reusable workflows",
+    title: "Clearer access control",
     description:
-      "Shared components and patterns reduced duplication across platform and client workflows.",
+      "Role and organization rules were reflected consistently across actions, workflows, and field visibility.",
   },
   {
     title: "Configurable operations",
@@ -128,9 +128,9 @@ const outcomes = [
       "Template-driven forms allowed store data structures to evolve without requiring separate interfaces for every configuration.",
   },
   {
-    title: "Clearer access control",
+    title: "Efficient data workflows",
     description:
-      "Role and organization rules were reflected consistently across actions, workflows, and field visibility.",
+      "Shared components and patterns reduced duplication across platform and client workflows.",
   },
 ];
 
