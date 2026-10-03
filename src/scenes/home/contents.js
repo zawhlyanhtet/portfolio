@@ -8,7 +8,7 @@ const heroProof = [
 
 const experience = [
   {
-    company: "Engineering Co., Ltd.",
+    company: "Engineerforce Co., Ltd.",
     title: "Frontend Engineer",
     period: "May 2023 – Dec 2025",
     summary:

@@ -11,21 +11,21 @@ export default function ExperienceSection() {
           {experience.map((role) => (
             <article
               key={role.company}
-              className="grid grid-cols-2 gap-x-3 gap-y-3 md:grid-cols-[minmax(0,0.45fr)_minmax(0,1.3fr)_minmax(0,0.62fr)] lg:grid-cols-[minmax(0,0.4fr)_minmax(0,1.2fr)_minmax(0,0.4fr)] md:gap-x-0 md:gap-y-6"
+              className="grid gap-y-3 md:grid-cols-[minmax(9.5rem,0.55fr)_minmax(0,1.3fr)_minmax(0,0.64fr)] md:gap-x-0 md:gap-y-6 lg:grid-cols-[minmax(0,0.4fr)_minmax(0,1.2fr)_minmax(0,0.4fr)]"
             >
-              <p className="col-span-2 self-center text-[13px] tabular-nums text-muted md:col-span-1">
+              <p className="text-[13px] tabular-nums text-muted md:self-center">
                 {role.period}
               </p>
 
-              <h3 className="self-center text-lg font-medium text-primary">
+              <h3 className="text-lg font-medium text-primary md:self-center">
                 {role.title}
               </h3>
 
-              <p className="self-center text-base font-medium text-muted">
+              <p className="text-base font-medium text-muted md:self-center">
                 {role.company}
               </p>
 
-              <div className="col-span-2 md:col-start-2 md:col-span-2">
+              <div className="md:col-start-2 md:col-span-2">
                 <p className="text-sm leading-6 text-normal md:max-w-2xl lg:max-w-3xl">
                   {role.summary}
                 </p>
@@ -40,7 +40,7 @@ export default function ExperienceSection() {
                     <span key={item}>
                       {item}
                       {index < role.focus.length - 1 && (
-                        <span className="text-accent ml-2" aria-hidden="true">
+                        <span className="ml-2 text-accent" aria-hidden="true">
                           ·
                         </span>
                       )}
