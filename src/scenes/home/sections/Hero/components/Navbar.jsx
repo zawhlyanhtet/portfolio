@@ -59,7 +59,7 @@ export default function Navbar() {
           </nav>
 
           <a
-            href="/resume.pdf"
+            href="/Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
             download="Zaw_Hlyan_Htet_Frontend_Engineer_Resume.pdf"
             className={`hidden gap-1 items-center rounded-xl border px-6 py-2 text-sm font-medium transition lg:inline-flex ${
               scrolled
